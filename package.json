@@ -1,0 +1,48 @@
+{
+  "name": "@vanioinformatika/appxray",
+  "version": "0.0.1",
+  "author": "Kovács Vince <vincekovacs@hotmail.com>",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Gyula Szalai",
+      "email": "gyszalai@gmail.com"
+    },
+    {
+      "name": "Kovács Vince",
+      "email": "vincekovacs@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanioinformatika/node-appxray.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">6.9"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "test": "mocha --require ts-node/register src/**/*.spec.ts",
+    "preversion": "git push && npm test",
+    "version": "npm run compile && git add -A dist",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "@types/express": "^4.0.35"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "@types/sinon": "^2.2.1",
+    "@types/sinon-chai": "^2.7.27",
+    "chai": "^3.5.0",
+    "dirty-chai": "^1.2.2",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.3.2"
+  }
+}
