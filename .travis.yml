@@ -6,3 +6,4 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
+after_success: npm run coverage

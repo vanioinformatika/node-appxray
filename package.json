@@ -25,6 +25,7 @@
   "scripts": {
     "compile": "tsc",
     "coverage": "nyc npm run test",
+    "coverage:ci": "nyc report --reporter=text-lcov | coveralls",
     "test": "mocha --recursive --compilers ts:ts-node/register test/**/*.spec.ts",
     "tslint": "tslint src/**/*.ts",
     "preversion": "git push && npm test",
@@ -44,6 +45,7 @@
     "@types/sinon-chai": "^2.7.27",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
+    "coveralls": "^2.13.1",
     "dirty-chai": "^1.2.2",
     "mocha": "^3.3.0",
     "nyc": "^11.0.2",
