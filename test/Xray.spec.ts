@@ -3,12 +3,13 @@ import {expect, use as chaiUse} from "chai";
 import * as  chaiAsPromised from "chai-as-promised";
 import "mocha";
 import * as sinonChai from "sinon-chai";
+import {Xray as DistXray} from "../dist/index";
+import {Xray as SrcXray} from "../index";
 import {IndicatorStatus} from "../src/Indicator";
-import {Xray} from "../src/Xray";
 
 chaiUse(sinonChai);
 chaiUse(chaiAsPromised);
-export const suite = (Xray: new () => Xray, source: string) => {
+export const suite = (Xray: new () => SrcXray | DistXray, source: string) => {
     describe("xray " + source, () => {
         describe("create / set xray", () => {
             it("should create new xray", () => {
@@ -290,5 +291,5 @@ export const suite = (Xray: new () => Xray, source: string) => {
     });
 };
 
-suite(require("../src/Xray").Xray, "src");
-suite(require("../dist/index").Xray, "dist");
+suite(SrcXray, "src");
+suite(DistXray, "dist");
