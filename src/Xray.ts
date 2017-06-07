@@ -248,7 +248,7 @@ export class Xray {
                 indicator.response = {
                     lastCheck: Date.now(),
                     response,
-                    status: IndicatorStatus.DOWN,
+                    status: IndicatorStatus.UP,
                 };
 
                 this.emit("xray.indicator.success", name, response);
