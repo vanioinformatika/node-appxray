@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/vanioinformatika/node-appxray.svg?branch=master)](https://travis-ci.org/vanioinformatika/node-appxray)
+[![Coverage Status](https://coveralls.io/repos/github/vanioinformatika/node-appxray/badge.svg)](https://coveralls.io/github/vanioinformatika/node-appxray)
 
 # App Xray
 
