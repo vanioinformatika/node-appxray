@@ -25,7 +25,7 @@
   "scripts": {
     "compile": "tsc",
     "coverage": "nyc npm run test",
-    "coverage:ci": "nyc report --reporter=text-lcov | coveralls",
+    "coverage:ci": "nyc report --reporter=text-lcov npm run test | coveralls",
     "test": "mocha --recursive --compilers ts:ts-node/register test/**/*.spec.ts",
     "tslint": "tslint src/**/*.ts",
     "preversion": "git push && npm test",
