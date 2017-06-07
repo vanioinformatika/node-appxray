@@ -10,6 +10,12 @@ The main concept is registering some callback functions which have to return `Pr
 resolved than Xray assume that service is up and running correctly, otherwise if the Promise is rejected than service
 is marked as down from some reason. Booth resolution and rejection result is saved and can accessed via `status` method.
 
+## Installation
+
+```bash
+npm install @vanioinformatika/appxray --save
+```
+
 ## API
 
 ### setInterval
