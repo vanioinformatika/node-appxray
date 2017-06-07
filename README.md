@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vanioinformatika/node-appxray.svg?branch=master)](https://travis-ci.org/vanioinformatika/node-appxray)
+
 # App Xray
 
 Xray help to monitor service health via health indicators.
