@@ -26,6 +26,7 @@
     "compile": "tsc",
     "coverage": "nyc npm run test",
     "test": "mocha --recursive --compilers ts:ts-node/register test/**/*.spec.ts",
+    "tslint": "tslint src/**/*.ts",
     "preversion": "git push && npm test",
     "version": "npm run compile && git add -A dist",
     "postversion": "git push && git push --tags"
