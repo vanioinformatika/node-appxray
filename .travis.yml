@@ -1,15 +1,12 @@
 language: node_js
 node_js:
   - 'node'
+  - '6'
+
+script: npm test
 
 jobs:
   include:
-    - stage: test
-      node_js:
-        - '6'
-        - 'node'
-      script: npm test
-    - stage: coverage-report
+    - stage: code quality
       script: npm run coverage:ci
-    - stage: code-quality
-      script: npm run tslint
+    - script: npm run tslint
