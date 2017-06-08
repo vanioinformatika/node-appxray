@@ -9,7 +9,8 @@ import {IndicatorStatus} from "../src/Indicator";
 
 chaiUse(sinonChai);
 chaiUse(chaiAsPromised);
-export const suite = (Xray: new () => SrcXray | DistXray, source: string) => {
+
+const suite = (Xray: new () => SrcXray | DistXray, source: string) => {
     describe("xray " + source, () => {
         describe("create / set xray", () => {
             it("should create new xray", () => {
