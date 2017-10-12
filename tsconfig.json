@@ -6,9 +6,9 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "module": "commonjs",
-    "target": "ES6",
+    "target": "es2015",
     "lib": [
-      "ES6"
+      "es2015"
     ],
     "sourceMap": true,
     "declaration": true,

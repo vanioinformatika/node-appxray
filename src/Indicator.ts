@@ -1,7 +1,7 @@
 export enum IndicatorStatus {
-    UNKNOWN,
-    UP,
-    DOWN,
+    UNKNOWN = "UNKNOWN",
+    UP = "UP",
+    DOWN = "DOWN",
 }
 
 export interface IndicatorResponse {
