@@ -26,33 +26,33 @@
     "compile": "tsc",
     "coverage": "nyc npm run test",
     "coverage:ci": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
-    "test": "mocha --recursive --compilers ts:ts-node/register test/**/*.spec.ts",
+    "test": "mocha --exit --recursive --compilers ts:ts-node/register test/**/*.spec.ts",
     "tslint": "tslint src/**/*.ts",
     "preversion": "git push && npm test",
     "version": "npm run compile && git add -A dist",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@types/bluebird": "^3.5.5",
-    "@types/node": "^7.0.23",
-    "bluebird": "^3.5.0"
+    "@types/bluebird": "^3.5.15",
+    "@types/node": "^8.0.34",
+    "bluebird": "^3.5.1"
   },
   "devDependencies": {
-    "@types/chai": "^3.5.2",
-    "@types/chai-as-promised": "0.0.31",
-    "@types/mocha": "^2.2.41",
-    "@types/sinon": "^2.2.1",
-    "@types/sinon-chai": "^2.7.27",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
-    "coveralls": "^2.13.1",
-    "dirty-chai": "^1.2.2",
-    "mocha": "^3.3.0",
-    "nyc": "^11.0.2",
-    "sinon": "^2.2.0",
-    "sinon-chai": "^2.10.0",
-    "ts-node": "^3.0.4",
-    "tslint": "^5.4.2",
-    "typescript": "^2.3.2"
+    "@types/chai": "^4.0.4",
+    "@types/chai-as-promised": "7.1.0",
+    "@types/mocha": "^2.2.43",
+    "@types/sinon": "^2.3.6",
+    "@types/sinon-chai": "^2.7.29",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "coveralls": "^3.0.0",
+    "dirty-chai": "^2.0.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "sinon": "^4.0.1",
+    "sinon-chai": "^2.14.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
   }
 }
